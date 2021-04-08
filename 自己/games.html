@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水桶bucket | 2021 LINE貼圖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body id="games">
+    <header>
+        <nav class="container" >
+            <img src="Line/哈囉 (1).png" class="logo">
+            <a href="index.html">Home</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="devices.html">Devices</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="map">
+            <img src="media/map.jpg" class="logo">
+            <a href="#card1">哪尼</a>
+            <a href="#card2">好喔</a>
+            <a href="#card3">我就強</a>
+            <a href="#card4">拍謝啦</a>
+            <a href="#card5">酷ㄟ</a>
+        </div>
+        <div class="box">
+        <div id="card1">
+            <img src="Line/哪尼.png" >
+            <p>哪尼，當你感到為之驚嘆時可以使用</p>
+        </div>
+        <div id="card2" style="display: none;">
+            <img src="Line/好喔-removebg-preview.png" >
+            <p>好喔，覺得無聊與無奈時可以使用</p>
+        </div>
+        <div id="card3" style="display: none;">
+            <img src="Line/我就強.png" >
+            <p>我就強，當你覺得自己屌爆了可以使用</p>
+        </div>
+        <div id="card4" style="display: none;">
+            <img src="Line/拍謝啦.png" >
+            <p>拍謝啦，當感到很抱歉時可以使用</p>
+        </div>
+        <div id="card5" style="display: none;">
+            <img src="Line/酷ㄟ.png" >
+            <p>酷ㄟ，當你覺得某件事很酷時可以使用</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="container">水桶bucket © 2021 LINE貼圖</div>
+    </footer>
+    <script>
+        $(".map>a").click(function(){
+            $(".box>div").hide();
+            $($(this).attr("href")).fadeIn();
+        });
+    </script>
+</body>
+</html>

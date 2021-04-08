@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水桶bucket | 2021 LINE貼圖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body id="devices">
+    <header>
+        <nav class="container" >
+            <img src="Line/哈囉 (1).png" class="logo">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="devices.html" class="active">Devices</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="card">
+            <img src="Line/YA-removebg-preview.png" >
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quo.</p>
+        </div>
+        <div class="card">
+            <img src="Line/蛤.png" >
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quo.</p>
+        </div>
+        <div class="card">
+            <img src="Line/謝謝.png" >
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quo.</p>
+        </div>
+        <div class="card">
+            <img src="Line/阿是沒被打過喔.png" >
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quo.</p>
+        </div>
+        <div class="card">
+            <img src="Line/公三小-removebg-preview (1).png" >
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quo.</p>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/lucaspoon0116/"><img src="media/facebook1.png"></a>
+            <a href="https://plus.google.com/"><img src="media/googleplusalt3.png"></a>
+            <a href="https://twitter.com/LucasPoon2"><img src="media/twitter2.png"></a>
+            <a href="https://www.youtube.com/channel/UC1wFgAFZamD1_Ur7Euj1-KA/videos"><img src="media/youtube1.png"></a>
+        </div>
+        <div class="lightbox" style="display: none;">
+        <div class="zone">
+        <p>水桶bucket | 2021 LINE貼圖</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">水桶bucket © 2021 LINE貼圖</div>
+    </footer>
+    <script>
+    $(".card img").click(function () {  
+        const imgNode=$(this).clone(); 
+        const txtNode=$(this).next().clone();
+        $(".zone").empty().append(imgNode,txtNode); 
+        $(".lightbox").fadeIn();
+    });
+    $(".lightbox").click(function(){
+        $(this).fadeOut();
+    });
+    </script>
+</body>
+</html>

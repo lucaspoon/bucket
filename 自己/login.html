@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水桶bucket | 2021 LINE貼圖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+     
+</head>
+<body id="login">
+    <header>
+        <nav class="container" >
+            <img src="Line/哈囉 (1).png" class="logo">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="devices.html">Devices</a>
+            <a href="login.html" class="active">Login</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+    <form action="api.php">
+        <video src="yt1s.com - 統神 面臨財務危機 被迫兼差打工 辛酸畫面流出.mp4" poster="https://media.apoidea.ai/article/db360e13-b1a3-4b1e-8c8f-d4717faba7f3.jpeg" width="760" height="300" preload="" controls="" loop="">
+            </video>
+        <label>Account
+            <input type="text" name="acc">
+            </label>
+            <label>Password
+                <input type="text" name="pwd">
+            </label>
+            <label>Captcha Code
+                <div>9487</div>
+                <input type="hidden" name="code" value="">
+            </label>
+            <label>Enter Captcha
+                <input type="text" name="chk">
+            </label>
+            <input type="submit" value="Login">
+
+    </form>
+    </main>
+
+    <footer>
+        <div class="container">水桶bucket © 2021 LINE貼圖</div>
+    </footer>
+    <script>
+        const cod=Math.floor(Math.random()*9000)+1000;
+        $("form div").text(cod);
+        $("input[type=hidden").val(cod);
+    </script>
+
+
+</body>
+</html>
